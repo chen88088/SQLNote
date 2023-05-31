@@ -12,7 +12,7 @@ create table 日收盤_新人訓練_陳鵬升
 	RecordID  bigint,
 	日期 nvarchar(8) ,
 	股票代號  nvarchar(10),
-	股票名稱  nvarchar(20),
+	股票名稱  nvarchar(20),
 	開盤價  decimal(9, 2),
 	最高價  decimal(9, 2),
 	最低價  decimal(9, 2),
@@ -20,7 +20,7 @@ create table 日收盤_新人訓練_陳鵬升
 	漲跌    decimal(9, 2),
 	primary key(日期 DESC, 股票代號 ASC),
 );
-CREATE NONCLUSTERED INDEX MTIME_Index ON 日收盤_新人訓練_陳鵬升 (MTIME DESC) ;
+CREATE NONCLUSTERED INDEX MTIME_Index ON 日收盤_新人訓練_陳鵬升 (MTIME DESC) ;
 ```
 
 ## 02. 以下常用的欄位型態分別是存什麼樣的資料？他的儲存大小為何？
