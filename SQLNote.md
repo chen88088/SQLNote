@@ -7,18 +7,18 @@
 ```sql=use StockDB
 create table 日收盤_新人訓練_陳鵬升
 (
-	CTIME  datetime DEFAULT getdate(),
-	MTIME  int,
-	RecordID  bigint,
-	日期 nvarchar(8) ,
-	股票代號  nvarchar(10),
-	股票名稱  nvarchar(20),
-	開盤價  decimal(9, 2),
-	最高價  decimal(9, 2),
-	最低價  decimal(9, 2),
-	收盤價  decimal(9, 2),
-	漲跌    decimal(9, 2),
-	primary key(日期 DESC, 股票代號 ASC),
+	CTIME  datetime DEFAULT getdate(),
+	MTIME  int,
+	RecordID  bigint,
+	日期 nvarchar(8) ,
+	股票代號  nvarchar(10),
+	股票名稱  nvarchar(20),
+	開盤價  decimal(9, 2),
+	最高價  decimal(9, 2),
+	最低價  decimal(9, 2),
+	收盤價  decimal(9, 2),
+	漲跌    decimal(9, 2),
+	primary key(日期 DESC, 股票代號 ASC),
 );
 CREATE NONCLUSTERED INDEX MTIME_Index ON 日收盤_新人訓練_陳鵬升 (MTIME DESC) ;
 ```
